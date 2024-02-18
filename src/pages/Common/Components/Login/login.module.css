@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+/* .row>* {
+  padding-left: 0 !important;
+} */
+
+.signinscreen input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  width: 100%;
+  font-size: 12px;
+  color: #153060;
+  padding: 12px;
+  border: 1px solid #EAEAEA;
+    border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 0px;
+    /* margin-bottom: 10px !important; */
+  resize: vertical;
+  background-color: #FAFAFA;
+  }
+
+  .security_text,
+  .captcha_box {
+    border: 1px solid #9BADCA !important;
+    border-radius: 5px;
+    height: 50px !important;
+    /* width: 140px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+
+  input[type='checkbox'] {
+    height: 17px;
+    width: 17px;
+  }
+  
+  input[type='checkbox']:checked {
+    accent-color: #153060;
+    /* background-image: url("../../assets/check_box_bg.svg"); */
+  
+  }
+  
+  ::-ms-input-placeholder {
+    /* Edge 12-18 */
+    font-size: 12px;
+    color: #828282;
+  }
+  
+  ::placeholder {
+    font-size: 12px;
+    color: #828282;
+  }
+  
+  .wrapper {
+    position: relative;
+  }
+  
+  .pw_icon {
+    position: absolute;
+    height: 15px;
+    top: 13px;
+    right: 10px;
+}
+
+.signinscreen input[type="submit"] {
+  background-color: #1E4178;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 12px;
+    font-family: 'Open Sans', sans-serif !important;
+    width: 100%;
+    border-radius: 5px;
+  cursor: pointer;
+    font-family: Open;
+}
+
+.signinscreen input[type="submit"]:hover {
+  /* background-color: black; */
+}
+
+/* .signinscreen .container p {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+*/
+.signinscreen .container {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.signinscreen .container .innerContainer {
+  border-radius: 7px;
+  background-color: #fff;
+  padding: 60px 40px;
+  max-width: 500px;
+  height: fit-content;
+  display: flex;
+    flex-direction: column;
+}
+
+.signinscreen .header {
+  background-color: black;
+  width: 100%;
+  padding: 20px;
+}
+
+.signinscreen .header p {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+.signinscreen .container .innerContainer span {
+  font-size: 14px;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.signinscreen {
+  display: grid;
+  place-items: center;
+  background: url('../../../../assets/images/login_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(2px);
+  width: 100%;
+  }
+
+
+  .content {
+    /* width: 400px; */
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+.forgot {
+  text-align: center !important;
+  margin-top: 1rem !important;
+}
+
+.submit{
+  background-color: #1E4178 !important;
+  color: white !important;
+  height: 43px !important;
+  width: 100% !important;
+  border-radius: 5px;
+}
+.submit:hover{
+  background-color: #1E4178 !important;
+  color: white;
+}
+.content p {
+  margin: 0px;
+}
+.content label {
+  font-size: 10px;
+  color: #153060;
+}
+body {
+  display: block !important;
+}
+.loader_screen{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f2f3;
+}
+.loader_screen img{
+  height: 100px;
+}
+.forRow{
+  --bs-gutter-x: 0rem;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}

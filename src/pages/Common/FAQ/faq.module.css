@@ -1,0 +1,306 @@
+.faq_banner{
+    height: 500px;
+    width: 100%;
+    background-color: #29669A;
+    /* background-image: url('../../../assets/images/faq-banner-girl.png'); */
+}
+.faq_banner h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 65px;
+    color: white;
+    font-size: 40px;
+}
+.faq_banner span{
+    color: white;
+    margin-top: 30px;
+}
+.faq_container{
+    background-color: #72B9D8;
+}
+.faq_card{
+    padding: 0px;
+    background-color: #72B9D8;
+    border-radius: 20px;
+    border: none;
+}
+.faq_card button{
+    background-color: #72B9D8;
+    border-radius: 20px;
+    color: green;
+}
+.faq_card button:not(.collapsed){
+    /* background-color: #172A4B;  */
+    color: white;
+    border-radius: 0px;
+    border: none;
+}
+.testing{
+    height: 100px;
+    animation: slide 500ms linear 1;
+    visibility: visible;
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.testing_rev{
+    height: 0px;
+    animation: sliderev 500ms linear 1;
+    /* visibility: hidden; */
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+@keyframes slide {
+    0% {
+      height: 0px;
+    }
+    20% {
+        height: 20px;
+    }
+    40% {
+        height: 40px;
+  
+    }
+    60% {
+        height: 60px;
+  
+    }
+    80% {
+        height: 80px;
+    }
+    100% {
+        height: 100px;
+      overflow: show;
+      visibility: visible;
+    }
+  }
+
+  @keyframes sliderev {
+    0% {
+      height: 100px;
+    }
+    20% {
+        height: 80px;
+    }
+    40% {
+        height: 60px;
+  
+    }
+    60% {
+        height: 40px;
+  
+    }
+    80% {
+        height: 20px;
+    }
+    100% {
+        height: 0px;
+      overflow: hidden;
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+.accordion input{
+    border: none;
+    color: white;
+    width: 100%;
+    text-align: left;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.accordion div{
+    width: 100%;
+    background-color: #172A4B;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* 
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    transform: rotate(-180deg)
+} */
+.faq_header{
+    padding: 0px;
+}
+.faq_button{
+    background-color: #23385C;
+}
+.faq_button :hover{
+    border: none;
+}
+.banner_girl{
+    position: relative;
+    height: 500px;
+    /* display: flex !important; */
+    flex-direction: row;
+    align-items: flex-end;
+    /* position: absolute;
+    right: 0px;
+    top: 107px; */
+}
+
+.banner_girl img{
+    width: 95%;
+}
+
+.answer_container{
+    background-color: #172A4B;
+    border-radius: 20px;
+}
+.question{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+.answer{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+.client_container{
+    background-color: #F4F6FA;
+}
+.client h2{
+    color: #29669A;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 38px;
+}
+.client span{
+    color: #29669A;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: px;
+}
+.client button{
+    background: linear-gradient(180deg, #02B8F7 0%, #1A2BB8 81.41%);
+    border: none;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 12px 20px;
+    border-radius: 20px;
+}
+.client_card{
+    border-radius: 20px;
+}
+.client_card span{
+    font-family: 'Inter', sans-serif;
+    color: #202020;
+    font-size: 13px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.client_card h5{
+    font-family: 'Goldman', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.arrow_button{
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 8px !important;
+}
+@media screen and (minWidth>1200) {
+    .faq_banner h1{
+        font-size: 50px !important;
+    }
+}
+
+.feature_container{
+    background-color: #29669A;
+    margin-bottom: 30px !important;
+}
+.features_left h2{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 400;
+    line-height: 1.6;
+}
+.features_left span{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: white;
+    font-weight: 400;
+}
+.features_right{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.features_right button{
+    background-color: #72B9D8;
+    border-radius: 20px;
+    font-size: 13px;
+    color: white;
+}
+.features_right button:hover{
+    background-color: #72B9D8;
+    color: white;
+}
+.features_bottom div{
+    background-color: #72B9D8;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.features_bottom div h6{
+    font-family: 'Goldman', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    /* padding-top: 1rem;
+    padding-bottom: 1rem; */
+    color: white;
+}
+.features_bottom div span{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: white;
+    text-align: center;
+}
+.features_bottom button{
+    /* background-color: #72B9D8; */
+    background: linear-gradient(180deg, #23385C 0%, #23385C 99.47%);
+    border: 1px solid #0074E5;
+    border-radius: 20px;
+    font-size: 11px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+.features_bottom button:hover{
+    color: white;
+}
+.accordion_bg {
+    --bs-accordion-bg: #72B9D8 !important;
+    --bs-accordion-border-color: #72B9D8 !important;
+}
+.accordion_item_bg {
+    background-color: #438DB8;
+    color: #fff;
+}
+.accordion_header button:not(.collapsed) {
+    color: #fff !important;
+    background-color: #438DB8;
+}
+.accordion_header button::after {
+ background-color: #fff;
+ border-radius: 50%;
+}

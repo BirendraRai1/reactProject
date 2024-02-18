@@ -1,0 +1,67 @@
+/* HEADER CSS */
+.topbar {
+    height: auto !important;
+    background-color: #438DB8;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.topbar_header {
+    font-size: large;
+    font-weight: 600;
+}
+.topbar_btn {
+    background-color: #fff !important;
+    color: #438DB8 !important;
+    border: none;
+    --bs-btn-active-bg: #e7f1ff;
+}
+.topbar_btn:hover{
+    background-color: #fff !important;
+}
+.topbar_btn a{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    color: #438DB8;
+}
+.topbar_btn a,.nav_text a:hover{
+    color: #438DB8 !important;
+}
+.nav_text a{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    color: #253D4E;
+}
+
+
+/* FOOTER CSS */
+.heading{
+    font-family: 'Quicksand', sans-serif; 
+    font-size: 24px;
+    font-weight: 600;
+}
+.footer_address {
+    color: #253D4E;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+}
+.footer_details .col-md-4 h2 {
+    color: #253D4E;
+    font-weight: 600;
+}
+.footer_app {
+    color: #838383;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.75;
+    font-family: 'Quicksand', sans-serif;
+}
+.footer_social_icon {
+    background-color: #253D4E;
+    border-radius: 20px;
+    border: 1px;
+}
+.footer_hr {
+    opacity: 1;
+    border: 1px antiquewhite solid;
+}

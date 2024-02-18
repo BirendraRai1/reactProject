@@ -1,0 +1,76 @@
+:root{
+
+}
+.addButton{
+    background: #72B9D8;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    border: none;
+    height: 30px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.addButton:hover, .addButton:focus,.addButton:active{
+    background: #72B9D8;
+}
+.addButton img{
+    height: 15px;
+}
+.wrapper img{
+    top: 10px;
+    right: 10px;
+}
+.tableStyle thead tr th,.tableStyle tfoot tr th{
+    background-color: #F9FAFB;
+    font-family: 'Inter', sans-serif;
+    color: #6B7280;
+    font-weight: 500;
+    font-size: 11px;
+}
+.tableStyle *{
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #6B7280 !important
+}
+.status{
+    display: flex;
+    border: none;
+}
+.Badge{
+    height: 18px;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 3px;
+    padding: 2px 7px;
+    font-weight: 500;
+}
+.new{
+    border: 1px solid rgb(30, 64, 175);
+    background-color: rgb(219, 234, 254);
+    color: rgb(30, 64, 175) !important;
+}
+.inProd{
+    border: 1px solid #FCD34D;
+    background-color: #FEF3C7;
+    color: #92400E !important;
+}
+.shipped{
+    border: 1px solid #6EE7B7;
+    background-color: #D1FAE5;
+    color: #065F46 !important;
+}
+.cancelled{
+    border: 1px solid #F9A8D4;
+    background-color: #FCE7F3;
+    color: #9D174D !important;
+}
+.rejected{
+    border: 1px solid #FCA5A5;
+    background-color: #FEE2E2;
+    color: #991B1B !important;
+}
+.draft{
+    border: 1px solid #D1D5DB;
+    background-color: #F3F4F6;
+    color: #1F2937 !important;
+}

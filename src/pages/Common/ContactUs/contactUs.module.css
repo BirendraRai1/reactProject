@@ -1,0 +1,52 @@
+.about_banner {
+    /* padding: 120px; */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('../../../assets/images/banner_wine.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: 700;
+    height: 500px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.heading{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.background{
+    background-image: url('../../../assets/images/login_bg.png');
+    background-size: cover;
+}
+.form_text{
+    font-family: 'Inter', sans-serif;
+    color: #29669A;
+}
+.text_field{
+    background-color: white;
+    margin-bottom: 0px !important;
+    font-size: 1rem !important;
+}
+
+.btn_submit{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px !important;
+    font-weight: 600;
+    background-color: #1E4178 !important;
+}
+.btn_submit:hover{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: white !important;
+    background-color: #1E4178;
+}
+.googleMap{
+    width: 100%;
+}
+sup{
+    color: red;
+}

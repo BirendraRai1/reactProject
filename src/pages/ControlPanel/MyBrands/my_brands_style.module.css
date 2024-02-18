@@ -1,0 +1,55 @@
+.Container *{
+    /* font-family: 'Poppins', sans-serif; */
+}
+.Container>div>h2{
+    font-size: 28px;
+    font-weight: 600;
+}
+.table *,.form *{
+    font-family: 'Poppins', sans-serif;
+}
+.table>thead{
+    background-color: rgb(249, 250, 251);
+}
+.table>thead>tr>th{
+    font-size: 13px;
+    font-weight: 500;
+    vertical-align: bottom;
+    background-color: transparent;
+    color: #6B7280 !important;
+}
+.table>tbody>tr>th{
+    font-size: 13px;
+    font-weight: 400;
+    vertical-align: middle;
+    color: #6B7280 !important;
+}
+.form>form>div>div>label{
+    color: black;
+    font-size: 13px;
+}
+.imgContainer img{
+    height: 100px;
+    overflow: hidden;
+}
+.btn{
+    color: white;
+    background: #72B9D8;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    border: none;
+    height: 30px;
+    font-weight: 500;
+}
+.btn_view{
+    height: 23px;
+    font-size: 13px;
+    padding: 2px 10px;
+    border: 1px solid rgb(30, 64, 175);
+    background-color: rgb(219, 234, 254);
+    color: rgb(30, 64, 175) 
+}
+.btn_edit{
+    background: #d3eced;
+    color: rgb(20 113 153);
+    border-color: rgb(20 113 153);
+}

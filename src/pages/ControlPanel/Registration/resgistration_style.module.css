@@ -1,0 +1,79 @@
+:root {
+    --primary-color: #29669A;
+}
+.mainHeading h2, .mainHeading h6{
+    font-family: 'Poppins', sans-serif;
+}
+
+.mainHeading h2{
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.mainHeading h6{
+    font-weight: 400;
+    font-size: 14px;
+}
+.sideHeading{
+    background: rgba(79, 128, 225, 0.15);
+}
+.sideHeading p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #29669A;
+}
+.subHeading{
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+}
+.subHeading div{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.subHeading div p{
+    font-size: 13px;
+}
+.subHeading *{
+    font-family: 'Inter', sans-serif;
+}
+.infoCard *{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+.infoCard div div div p{
+    font-weight: 500;
+}
+.nameContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.nameContainer p{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 11px;
+}
+.buttonRow button{
+    height: 37px;
+    font-size: 14px;
+}
+#btnChange, #btnSaveChange{
+    background-color: var(--primary-color);
+    border: none;
+}
+#btnDelete, #btnCancel{
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+#btnDelete:hover, #btnCancel:hover{
+    background-color: transparent;
+}
+.formStyle *{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+.formGroup label{
+    font-size: 13px;
+}
+.rightPanel{
+    min-height: 320px;
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+}

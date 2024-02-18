@@ -1,0 +1,65 @@
+.about_banner {
+    /* padding: 120px; */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('../../../assets/images/about_banner.png');
+    background-size: cover;
+    opacity: 2;
+    background-repeat: no-repeat;
+    font-weight: 700;
+    height: 650px;
+}
+.about_banner h1 {
+    /* font-size: 50px; */
+    text-shadow: 1px 2px black;
+}
+.about_section {
+    background: linear-gradient(180deg, #72B9D8 55%, white 100%)
+}
+.about_section p {
+    font-size: 18px;
+    font-weight: 500;
+}
+.about_section .text-danger {
+    font-weight: 600;
+}
+.our_vision {
+    color: #0F0049;
+}
+.our_vision p {
+    color: #111827;
+    font-weight: 400;
+}
+.collaborate_section {
+    color: #0F0049;
+    font-weight: 400;
+}
+.collaborate_section p{
+    color: #111827;
+    font-weight: 400;
+}
+.collaborate_section .collab_tick_section {
+    color: #0F0049;
+    font-size: 18px;
+    font-weight: 500;
+}
+.explore_career_section h1{
+    color: #0F0049;
+    font-weight: 400;
+}
+.explore_career_section p {
+    color: #111827;
+    font-weight: 400;
+}
+.explore_career_section .text-danger {
+    font-weight: 600;
+}
+.explore_career_section h4 {
+    color: #0F0049;
+}
+.explore_career_section p {
+    color: #111827;
+    font-weight: 400;
+}
+.explore_career_section .explore_box {
+    border-radius: 10px; 
+    border: 1px rgba(0, 0, 0, 0.10) solid
+  }

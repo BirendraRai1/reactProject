@@ -1,0 +1,6 @@
+.solutionBanner {
+    background: linear-gradient(rgba(41, 102, 154 , 0.5), rgba(41, 102, 154 , 0.5)),url('../../../assets/images/solution_banner.png');
+    width: 100%; 
+    height: 400px; 
+    /* background: rgba(41, 102, 154, 0.60); */
+}
