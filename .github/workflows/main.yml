@@ -5,7 +5,7 @@ name: Horeca_web
 
 on:
   push:
-    branches: ["master"]
+    branches: ["main"]
 
 jobs:
   build:
