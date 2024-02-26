@@ -35,5 +35,4 @@ jobs:
         run: npm install pm2 -g
 
       - name: Start PM2 Process
-        run: pm2 serve dist 5173 --spa
-
+        run: pm2 serve -f dist 5173 --spa
