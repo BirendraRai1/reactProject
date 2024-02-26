@@ -1,57 +1,39 @@
-name: Horeca_web
+name: React CI/CD with Serve and PM2
 
 on:
   push:
     branches:
-      - main
-
-env:
-  CI: false
+      - main # or the branch you want to trigger the workflow on
 
 jobs:
   build:
-    name: Build
     runs-on: self-hosted
 
     steps:
-      - name: Checkout repo
+      - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Setup Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: "18.x"
+      - name: Install Dependencies
+        run: npm install
 
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
-
-      - name: Build project
+      - name: Build React App
         run: npm run build
-        env:
-          github_token: ${{ secrets.TOKEN }}
-          VITE_BASE_URL: ${{secrets.VITE_BASE_URL}}
 
-      - name: Upload production-ready build files
-        uses: actions/upload-artifact@v2
-        with:
-          name: production-files
-          path: ./dist
+      - name: Serve React App
+        run: |
+          npm install -g serve
+          serve -l 5173 -s build &
 
   deploy:
-    name: Deploy
-    needs: build
     runs-on: self-hosted
-    if: github.ref == 'refs/heads/main'
+    needs: build
 
     steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: production-files
-          path: ./dist
+      - name: Install PM2
+        run: npm install pm2 -g
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.TOKEN }}
-          publish_dir: ./dist
+      - name: Stop Existing PM2 Process
+        run: pm2 delete reactProject || true
+
+      - name: Start PM2 Process
+        run: pm2 serve build --name reactProject --no-daemon
