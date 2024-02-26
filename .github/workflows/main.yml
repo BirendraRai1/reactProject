@@ -1,4 +1,4 @@
-name: React CI/CD with Serve and PM2
+name: Horeca_web
 
 on:
   push:
@@ -22,7 +22,7 @@ jobs:
       - name: Serve React App
         run: |
           npm install -g serve
-          serve -l 5173 -s build &
+          serve -l 5173 -s dist &
 
   deploy:
     runs-on: self-hosted
@@ -32,8 +32,5 @@ jobs:
       - name: Install PM2
         run: npm install pm2 -g
 
-      - name: Stop Existing PM2 Process
-        run: pm2 delete reactProject || true
-
       - name: Start PM2 Process
-        run: pm2 serve build --name reactProject --no-daemon
+        run: pm2 serve dist 5173 --spa
