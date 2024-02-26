@@ -25,14 +25,3 @@ jobs:
           serve -l 5173 -s dist &
         env:
           VITE_BASE_URL: ${{ secrets.VITE_BASE_URL }}
-
-  deploy:
-    runs-on: self-hosted
-    needs: build
-
-    steps:
-      - name: Install PM2
-        run: npm install pm2 -g
-
-      - name: Start PM2 Process
-        run: pm2 serve -f dist 5173 --spa
